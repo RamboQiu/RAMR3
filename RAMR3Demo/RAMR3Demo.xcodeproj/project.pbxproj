@@ -37,9 +37,6 @@
 		3594E9E7219BC38000FCAB51 /* r3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3.h; sourceTree = "<group>"; };
 		3594E9E8219BC38000FCAB51 /* r3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = r3.hpp; sourceTree = "<group>"; };
 		3594E9E9219BC38000FCAB51 /* r3_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_define.h; sourceTree = "<group>"; };
-		3594E9EA219BC38000FCAB51 /* r3_gvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_gvc.h; sourceTree = "<group>"; };
-		3594E9EB219BC38000FCAB51 /* r3_json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_json.h; sourceTree = "<group>"; };
-		3594E9EC219BC38000FCAB51 /* r3_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_list.h; sourceTree = "<group>"; };
 		3594E9ED219BC38000FCAB51 /* r3_str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_str.h; sourceTree = "<group>"; };
 		3594E9EE219BC38000FCAB51 /* str_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = str_array.h; sourceTree = "<group>"; };
 		3594E9F0219BC38000FCAB51 /* list.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = list.m; sourceTree = "<group>"; };
@@ -51,6 +48,9 @@
 		3594E9F6219BC38000FCAB51 /* token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = token.m; sourceTree = "<group>"; };
 		3594E9F7219BC38000FCAB51 /* zmalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zmalloc.c; sourceTree = "<group>"; };
 		3594E9F8219BC38000FCAB51 /* zmalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmalloc.h; sourceTree = "<group>"; };
+		3594EA03219BFC9600FCAB51 /* r3_json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_json.h; sourceTree = "<group>"; };
+		3594EA04219BFCA100FCAB51 /* r3_gvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_gvc.h; sourceTree = "<group>"; };
+		3594EA05219BFCA100FCAB51 /* r3_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r3_list.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +114,11 @@
 				3594E9E7219BC38000FCAB51 /* r3.h */,
 				3594E9E8219BC38000FCAB51 /* r3.hpp */,
 				3594E9E9219BC38000FCAB51 /* r3_define.h */,
-				3594E9EA219BC38000FCAB51 /* r3_gvc.h */,
-				3594E9EB219BC38000FCAB51 /* r3_json.h */,
-				3594E9EC219BC38000FCAB51 /* r3_list.h */,
 				3594E9ED219BC38000FCAB51 /* r3_str.h */,
 				3594E9EE219BC38000FCAB51 /* str_array.h */,
+				3594EA04219BFCA100FCAB51 /* r3_gvc.h */,
+				3594EA03219BFC9600FCAB51 /* r3_json.h */,
+				3594EA05219BFCA100FCAB51 /* r3_list.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -306,6 +306,7 @@
 		3594E9E1219BC34700FCAB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MEEVZF39DJ;
 				OTHER_LDFLAGS = (
@@ -320,6 +321,7 @@
 		3594E9E2219BC34700FCAB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MEEVZF39DJ;
 				OTHER_LDFLAGS = (
